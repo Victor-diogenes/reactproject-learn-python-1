@@ -1,0 +1,124 @@
+Python Function
+A function is simply a line of code that you can reuse rather than writing it out repeatedly. Programmers can use functions to divide a problem into smaller lines, each of which performs a specific task. 
+When a function is called, it executes. Data can be passed into functions as parameters. 
+In Python, functions are defined by using the def keyword, followed by the function's name and parentheses.
+
+
+example
+
+def hello():
+  print("hello readers")
+
+The above line of code can be executed anywhere in the program as long as the function is first created before calling it. In layman's terms, functions are defined before they are called.
+ example 
+ 
+ hello()
+
+
+ def hello()
+   print("hello world ")
+
+Thi will raise an error
+Traceback (most recent call last):
+  File "./prog.py", line 2, in <module>
+NameError: name 'my_function' is not defined
+
+
+The proper way to invoke a function is to place the calling code beneath it. It can be on line 100, but not above the function.
+
+example 
+
+def hello():
+  print("hello world")
+
+hello()
+
+output
+
+hello world 
+
+You now understand how to create and call a function. But what we've discovered so far is a simple function. Functions are designed to make writing long lines of code easier. Functions can accept data passed to them as arguments.
+Let's now write a function that accepts data.
+
+def hell(name):
+
+  print ("Hello Mr. " + name)
+
+When the above function is called, arguments are passed, which are then concatenated with the string and printed on the terminal.
+Let's now call the function above and pass names into it each time.
+
+hello("John")
+hello("Frank")
+hello("Victor")
+
+output
+Hello Mr. John
+Hello Mr. Frank
+Hello Mr. Victor
+
+
+Remember that a function can be called with the appropriate number of arguments. In other words, if a function expects two arguments, the same two arguments should be passed to it when it is called.
+
+ example 
+
+ def hello(mname, fname):
+    print("Hello Mr" + mname + "and Mrs." + fname)
+
+hello("Victor", "Anna")
+
+output
+ Hello Mr. Victor and Mrs. Anna
+
+Python will throw an error if you leave out one of the arguments.
+
+example
+ def hello(mname, fname):
+    print("Hello Mr" + mname + "and Mrs." + fname)
+
+hello("Victor")
+
+output
+
+Traceback (most recent call last):
+  File "./prog.py", line 4, in <module>
+TypeError: hello() missing 1 required positional argument: 'fname'
+
+You may not know how many arguments will be passed to the function at some point. *args can be useful in search scenarios. The parameter name is preceded by the *args.
+
+example
+
+def names(*names):
+  print("His name is " + names[1])
+
+names("Emil", "John", "Frank")
+
+output
+His name is John
+
+If you pass arguments into such functions without specifying the index, an error will occur.
+
+example
+def names(*names):
+  print("His name is " + names)
+
+names("Emil", "John", "Frank")
+
+output
+Traceback (most recent call last):
+  File "./prog.py", line 4, in <module>
+  File "./prog.py", line 2, in names
+TypeError: can only concatenate str (not "tuple") to str
+
+
+A function can be given a default value, which is displayed if no arguments are passed to it.
+
+example
+
+def name(myname="Victor"):
+  print("My name is "+ myname)
+
+name()
+
+output
+
+My name is Victor
