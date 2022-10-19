@@ -1,3 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+.main-container4{
+  margin-left: 180px;
+  margin-right: 300px;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+     
+    }
+table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+ td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+.block{
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        background-color: #dddddd;
+        text-indent: 12px;
+        
+      }
+.note{
+        font-size: 24;
+        
+      }
+.block2{
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+}
+.block2 > p{
+    text-indent: 10px;
+    margin: 10px;
+}
+.title{
+    margin-top: 10px;
+}
+.block2 > .block3{
+  text-indent: 25px;
+  
+}
+.print{
+  color: #90EE90;
+  text-indent: 10px;
+}
+
+
+  .button1{
+ margin-left: 0;
+ margin-top: 50px;
+ background-color: green;
+ color: white;
+
+  }
+.button2{
+  margin-right: 0;
+  margin-left: 760px;
+  color: white;
+  background-color: green;
+
+}
+
+@media screen and (max-width: 760px){
+
+
+}
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./datatype.css"
@@ -21,8 +97,8 @@ const Datatype = () => {
       
       />
       <Side/>
-        <main className='main-container'>
-        <button className='upbutton3' onClick={() => navigate(-1)}> Previous page</button>
+        <main className='main-container4'>
+       
     
             
                 <h1>Python data types</h1>

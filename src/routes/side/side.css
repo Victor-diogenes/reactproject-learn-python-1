@@ -5,12 +5,7 @@ background-color: black;
 position: fixed;
 display: flex;
 }
-.brand-name {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 1.3rem;
-  margin-left: 1rem;
-}
+
 .navigation-menu1 {
   margin-left: auto;
 }
@@ -37,10 +32,7 @@ display: flex;
 }
 .hamburger {
 
-  border: 0;
-  height: 100%;
-  width: 100%;
-  margin-left: 100px;
+
 
   background-color: grey;
   cursor: pointer;
@@ -56,13 +48,14 @@ display: flex;
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  width: 20%;
+  
     
   }
-.navigation1{
-  background-color:black
 
 
-}
+
+
   .navigation-menu1 ul {
 
     position: absolute;

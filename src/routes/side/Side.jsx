@@ -8,9 +8,7 @@ const Side = () => {
 
   return (
     <nav className="navigation1">
-    <a href="/getstarted" className="brand-name">
-      Python
-    </a>
+
     <button
         className="hamburger"
         onClick={() => {
@@ -30,7 +28,7 @@ const Side = () => {
   
           <li><a href="/getstarted">Get Started</a></li>
           <li>    <a href="/variable">Variables</a></li> 
-<li>    <a href="/datatypes">Data Types</a></li>
+<li>    <a href="#data">Data Types</a></li>
 
 
  <li>   <a href="/pythonfunction">Functions</a></li>

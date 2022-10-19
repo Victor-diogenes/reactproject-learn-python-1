@@ -22,7 +22,7 @@ const Getstarted = () => {
 
 <Side/>
    
-            <section className='main-content'>
+            <section className='introduction'>
         
       
                 <div>
