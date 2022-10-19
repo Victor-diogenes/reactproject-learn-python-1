@@ -23,7 +23,7 @@ const Variables = () => {
       
       />
       <Side/>
-      <section className='main-content2'>
+      <section className='variables'>
     
         <div>
           <h1>Python Variables</h1>

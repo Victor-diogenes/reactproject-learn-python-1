@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
-.main-content{
+.introduction{
     background-color: #fff;
     box-shadow: var(--shadow);
     margin-left: 180px;
     margin-right: 300px;
-    margin-top: 20px;
+    margin-top: 50px;
      
    
 }
-.main-content > div > p,h1,h3,h5,span{
+.introduction > div > p,h1,h3,h5,span{
     text-align: left;
 }
-.main-content > div > .textbox{
+.introduction > div > .textbox{
   background-color: grey;
   color: whitesmoke;
   display: flex;
 
 }
-.main-content > div > form {
+.introduction > div > form {
     padding: 12px;
     display: flex;
     justify-content: left;
    
 
 }
-.main-content > div > .textbox2{
+.introduction > div > .textbox2{
     background-color: grey;
     color: whitesmoke;
     display: flex;
@@ -55,12 +55,15 @@
   border-radius: 5px;
  }
  
-  @media screen and (max-width: 960px) {
-  .main-content{
-margin-top: 20px;
+  @media screen and (max-width: 768px) {
+  .introduction{
+margin-top: 50px;
 margin-left: 0;
 margin-right: 0;
 }
 
 
   }
+@media screen and (max-width: 400px) {
+  
+}
