@@ -1,6 +1,7 @@
 {
   "name": "learn-python-1",
   "version": "0.1.0",
+  "homepage": "http://vmdtutorials.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
